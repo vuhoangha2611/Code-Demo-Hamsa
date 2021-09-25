@@ -1,0 +1,368 @@
+@font-face {
+    font-family: Gotham;
+    src: url(font/Gotham\ HTF\ Bold.ttf);
+    font-size: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url(font/gotham-htf-book.ttf);
+    font-size: normal;
+    font-weight: 100;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.container{
+    width: 100%;
+    display: block;
+    
+}
+
+:root{
+    --White: hsla(0, 0%, 100%, 40%);
+    --Transparent: hsla(245, 71%, 24%, 0);
+}
+
+.menu{
+    background-image: url(image/image\ menu.JPG);
+    height: 900px;
+    background-color:rgb(240, 240, 240);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg, var(--White), var(--Transparent)),
+    url(image/image\ menu.JPG) no-repeat center center / cover;
+}
+
+.list{
+    padding-top:150px ;
+}
+
+.list ul{
+    list-style: none;
+}
+
+.list a{
+    font-family:Gotham;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 16px;
+    margin-left: 20px;
+    display: block;
+    color: black;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+.list p{
+    font-family: Gotham;
+    font-size: 60px;
+    letter-spacing: 10px;
+    bottom: 334px;
+    left:485px;
+    font-weight: 700;
+    position: relative;
+    width: 300px;
+}
+
+.content{
+    width: 100%;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 760px 760px;
+}
+
+.item img{
+    width: 760px;
+    height: 760px; 
+}
+
+.item1, .item2{
+    position: relative;
+}
+
+.item1 h2{
+    font-family: Gotham;
+    position: absolute;
+    top: 320px;
+    left: 238px;
+    color: rgb(255, 255, 255);
+    font-size: 47px;
+}
+
+.item2 h2{
+    font-family: Gotham;
+    position: absolute;
+    top: 305px;
+    left: 290px;
+    color: rgb(255, 255, 255);
+    font-size: 47px;
+}
+
+.item2 p{
+    font-family: Gotham;
+    position: absolute;
+    top: 355px;
+    left: 270px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding: 7px;
+    font-weight: 700;
+}
+
+.tag{
+    display: grid;
+    grid-template-columns: 1520px;
+}
+
+.tag p{
+    font-family: Gotham;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400px;
+}
+
+.review{
+    width: 100%;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 304px 304px 304px 304px 304px;
+}
+
+.review img{
+    width: 304px;
+    height: 304px;
+}
+
+.footer{
+    width: 100%;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 760px 760px;
+}
+
+.footer1{
+    margin-top: 50px;
+    margin-left: 90px
+}
+
+.footer1 label{
+    font-family: Gotham;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.footer1 input{
+    width: 515px;
+    height:48px;
+    margin-top: 10px;
+    margin-bottom: 20px;  
+}
+
+.footer1 button{
+    width: 48px;
+    height: 48px;
+    font-family: Gotham;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.icon a {
+    padding: 1px;
+    font-size: 39px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: rgb(0, 0, 0);
+  }
+
+.icon .fa:hover {
+    opacity: 0.7;
+}
+
+.footer2{
+    position: relative;
+    left: 490px;
+    top: 32px;
+    width: 200px;
+}
+
+.footer2 p{
+    font-family: Gotham;
+    font-size: 19px;
+    font-weight: 700; 
+}
+
+.footer2 a{
+    font-family: Gotham;
+    font-weight: 100;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: black;
+    padding-bottom:7px;  
+}
+
+.info{
+    margin-top: 68px;
+    margin-bottom: 50px;
+    border-width: 0px;
+    border-style: solid;
+    position: static;
+    text-align: center;
+}
+
+.info a {
+    text-decoration: none;
+    padding: 7px;
+    color: black;
+    font-family: Gotham;
+    font-weight: 100;
+    font-size: 14px;
+    justify-content: center;
+}
+
+
+/* For Mobile: */
+@media only screen and (max-width: 415px) {
+    .menu{
+        width: 414px;
+        text-align: center;
+    }
+    .list a{
+        position: relative;
+        left: -28px;
+    }
+    .list p{
+        position:relative;
+        font-size: 30px;
+        left: 46px;
+        bottom: 600px;
+    }
+    .content{
+        width: 414px;
+        margin: 0px;
+        grid-template-columns: 414px;
+    }
+    .item img{
+        width: 414px;
+        height: 414px;
+    }
+    .item2{
+        top: -5px;
+    }
+    .item1 h2{
+        top: 160px;
+        left: 90px;
+        font-size: 32px;
+    }
+    .item2 h2{
+        top: 137px;
+        left: 146px;
+        font-size: 32px;
+    }
+    .item2 p{
+        top: 171px;
+        left: 130px;  
+        font-size: 17px;      
+    }
+    .tag{
+        grid-template-columns: 414px;
+    }
+    .tag p{
+        font-size: 12px;
+    }
+    .review{
+        grid-template-columns: 414px;
+    }
+    .review img{
+        width: 414px;
+        height: 414px;
+    }
+    .footer{
+        grid-template-columns: 414px;
+        text-align: center;
+    }
+    .footer1{
+        margin-top: 50px;
+        margin-left: 10px
+    }
+    .footer1 label{
+        font-size: 15px;
+    }
+    .footer1 input{
+        width: 246px;
+        height:30px;
+    }
+    .footer1 button{
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .icon a {
+        font-size: 29px;
+        width: 35px;
+      }
+    .footer2{
+        position: relative;
+        left: 112px;
+        top: 40px;
+        width: 200px;
+    }
+    .info{
+        margin-bottom:100px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
